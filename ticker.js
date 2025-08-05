@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //calc speed of the movment
    const totalWidth = ticker.scrollWidth;
-  const speed = 50; // פיקסלים לשנייה
+  const speed = 90; // פיקסלים לשנייה
   const duration = totalWidth / speed;
 
   ticker.style.animationDuration = `${duration}s`;
