@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const span = ticker.querySelector("span");
 
   const clone = span.cloneNode(true);
+  clone.setAttribute("aria-hidden", "true")
   ticker.appendChild(clone);
 });
 
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let count = 0;
   while (ticker.scrollWidth < window.innerWidth * 3 && count < 50) {
     const s = document.createElement("span");
-    s.textContent = text;
+s.innerHTML = contentHTML;
     ticker.appendChild(s);
     count++;
   }
